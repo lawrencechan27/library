@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+
+    <script src="library.js" defer></script>
+
+</head>
+
+<body>
+
+    <form id="bookForm" class="addBookForm">
+
+        <b>Add a book</b>
+
+        <p>
+            <label for="book">Title</label><br />
+            <input type="text" name="book" id="inputBook" required />
+        </p>
+        <p>
+            <label for="author">Author</label><br />
+            <input type="text" id="inputAuthor" name="author" required />
+        </p>
+        <p>
+            <label for="pages">Pages</label><br />
+            <input type="number" id="inputPages" name="pages" required />
+        </p>
+        <p>
+            <label for="read">Read</label><br />
+            <input type="text" id="inputRead" name="read" required />
+        </p>
+        <button id="addBtn" type="submit">Add Book</button>
+    </form>
+
+    <div class="wrapper">
+        <button id="formBtn">Add Book</button>
+        <div class="bookshelf"></div>
+    </div>
+
+</body>
+
+</html>
